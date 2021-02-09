@@ -1,19 +1,23 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import logo from './heater-logo.png'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import logo from './heater_logo.png'
 
-const authenticatedOptions = (
-  <Fragment>
-    <Nav.Link href="#change-password">Change Password</Nav.Link>
-    <Nav.Link href="#sign-out">Sign Out</Nav.Link>
-  </Fragment>
-)
+// const authenticatedOptions = (
+//   <Fragment>
+//     <Nav.Link href="#change-password">Change Password</Nav.Link>
+//     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
+//   </Fragment>
+// )
 
 const unauthenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#sign-up">Sign Up</Nav.Link>
-    <Nav.Link href="#sign-in">Sign In</Nav.Link>
+    <NavDropdown title="Navigation" class="collapsible-nav-dropdown">
+      <NavDropdown.Item href="#sign-up">H-E-A-T</NavDropdown.Item>
+      <NavDropdown.Item href="#sign-in">Events</NavDropdown.Item>
+      <NavDropdown.Item href="#sign-in">Board</NavDropdown.Item>
+    </NavDropdown>
   </Fragment>
 )
 
@@ -33,10 +37,12 @@ const Header = ({ user }) => (
       <Nav className="ml-auto">
         { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
         { alwaysOptions }
-        { user ? authenticatedOptions : unauthenticatedOptions }
+        { unauthenticatedOptions }
       </Nav>
     </Navbar.Collapse>
   </Navbar>
 )
+
+// { user ? authenticatedOptions : unauthenticatedOptions }
 
 export default Header

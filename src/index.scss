@@ -1,5 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background: #F7F8FC;
+}
+
+h1, h2, p {
+  color: #999D9D;
+  text-align: center;
+}
+
 .navbar {
   background: #1C325E;
 }
@@ -9,3 +18,9 @@
   height: 50px;
   width: 50px;
 }
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
