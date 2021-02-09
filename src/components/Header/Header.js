@@ -17,7 +17,7 @@ const unauthenticatedOptions = (
     <NavDropdown title="Menu" class="collapsible-nav-dropdown">
       <NavDropdown.Item href="#heat-initiative">H-E-A-T</NavDropdown.Item>
       <NavDropdown.Item href="#events">Events</NavDropdown.Item>
-      <NavDropdown.Item href="#sign-in">Board</NavDropdown.Item>
+      <NavDropdown.Item href="#board">Board</NavDropdown.Item>
     </NavDropdown>
   </Fragment>
 )

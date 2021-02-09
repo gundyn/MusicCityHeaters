@@ -13,6 +13,7 @@ import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Heat from './components/Heat/Heat'
 import Events from './components/Events/Events'
+import Board from './components/Board/Board'
 
 class App extends Component {
   constructor (props) {
@@ -62,6 +63,8 @@ class App extends Component {
           <Route exact path='/heat-initiative' render={() => (<Heat />)} />
 
           <Route exact path='/events' render={() => (<Events />)} />
+
+          <Route exact path='/board' render={() => (<Board />)} />
         </main>
       </Fragment>
     )
