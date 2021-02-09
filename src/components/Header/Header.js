@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import logo from './heater-logo.png'
 
 const authenticatedOptions = (
   <Fragment>
@@ -23,9 +24,9 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar className="navbar" variant="dark" expand="md">
     <Navbar.Brand href="#">
-      Music City Heaters
+      <img src={logo} alt="Music City Heaters logo - Indian skull from Flag of Nashville, smoking a cigarette with the smoke in the shape of the Cumberland River." className="logo"/>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
