@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import logo from './heater_logo.png'
+// import hamburger from './hamburger_icon.png'
 
 // const authenticatedOptions = (
 //   <Fragment>
@@ -13,9 +14,9 @@ import logo from './heater_logo.png'
 
 const unauthenticatedOptions = (
   <Fragment>
-    <NavDropdown title="Navigation" class="collapsible-nav-dropdown">
-      <NavDropdown.Item href="#sign-up">H-E-A-T</NavDropdown.Item>
-      <NavDropdown.Item href="#sign-in">Events</NavDropdown.Item>
+    <NavDropdown title="Menu" class="collapsible-nav-dropdown">
+      <NavDropdown.Item href="#heat-initiative">H-E-A-T</NavDropdown.Item>
+      <NavDropdown.Item href="#events">Events</NavDropdown.Item>
       <NavDropdown.Item href="#sign-in">Board</NavDropdown.Item>
     </NavDropdown>
   </Fragment>
@@ -36,8 +37,8 @@ const Header = ({ user }) => (
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
         { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
-        { alwaysOptions }
         { unauthenticatedOptions }
+        { alwaysOptions }
       </Nav>
     </Navbar.Collapse>
   </Navbar>

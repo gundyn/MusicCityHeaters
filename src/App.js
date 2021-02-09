@@ -11,6 +11,8 @@ import Header from './components/Header/Header'
 // import ChangePassword from './components/ChangePassword/ChangePassword'
 
 import Home from './components/Home/Home'
+import Heat from './components/Heat/Heat'
+import Events from './components/Events/Events'
 
 class App extends Component {
   constructor (props) {
@@ -56,6 +58,10 @@ class App extends Component {
         ))}
         <main className="container">
           <Route exact path='/' component={Home}/>
+
+          <Route exact path='/heat-initiative' render={() => (<Heat />)} />
+
+          <Route exact path='/events' render={() => (<Events />)} />
         </main>
       </Fragment>
     )
