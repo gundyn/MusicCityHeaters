@@ -12,7 +12,7 @@ const Heat = () => (
           <img src={heat} className="heat"/>
         </div>
         <br/>
-        <p>Decripstion of the initiative</p>
+        <p>Mission: to be a positive social influence and service the equity of the Nashville Community through the Music City Heaters</p>
         <br/>
         <div className="row justify-content-center text-center">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOkCKEcEtM278_ZFe9qCZGAfQER2VxLe3fiSC2MCtpvrmolg/viewform?usp=pp_url" target="_blank" rel="noopener noreferrer">
