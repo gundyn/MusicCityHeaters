@@ -18,9 +18,12 @@ const unauthenticatedOptions = (
       <NavDropdown.Item href="#heat-initiative">H-E-A-T</NavDropdown.Item>
       <NavDropdown.Item href="#events">Events</NavDropdown.Item>
       <NavDropdown.Item href="#board">Board</NavDropdown.Item>
+
     </NavDropdown>
   </Fragment>
 )
+
+// <NavDropdown.Item href="#merch">Merch</NavDropdown.Item>
 
 const alwaysOptions = (
   <Fragment>

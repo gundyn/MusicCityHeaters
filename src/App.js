@@ -14,6 +14,7 @@ import Home from './components/Home/Home'
 import Heat from './components/Heat/Heat'
 import Events from './components/Events/Events'
 import Board from './components/Board/Board'
+// import Cart from './components/Merch/Cart'
 
 class App extends Component {
   constructor (props) {
@@ -65,11 +66,14 @@ class App extends Component {
           <Route exact path='/events' render={() => (<Events />)} />
 
           <Route exact path='/board' render={() => (<Board />)} />
+
         </main>
       </Fragment>
     )
   }
 }
+
+// <Route exact path='/merch' render={() => (<Cart />)} />
 
 // <Route path='/sign-up' render={() => (
 //   <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />

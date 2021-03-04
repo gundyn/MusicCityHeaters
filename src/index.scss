@@ -1,10 +1,22 @@
 @import '~bootstrap/scss/bootstrap';
 
-body {
-  background: #F7F8FC;
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+  
+  .navbar {
+    background: #343a40;
+  }
 }
 
-h1, h2, p {
+body {
+  background: #F7F8FC;
+  height: 100%;
+}
+
+h1, h2, h5, p {
   color: #999D9D;
   text-align: center;
 }
@@ -26,6 +38,16 @@ h1, h2, p {
 }
 
 img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #1C325E;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  height: 85px;
+  position: fixed;
 }
