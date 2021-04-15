@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Container, Row, Col } from 'react-bootstrap'
+import '../../index.scss'
 
 import heat from './heat.png'
 
@@ -20,23 +21,32 @@ const Heat = () => (
             HEAT Restaurant Visit Form
           </a>
         </div>
+        <br />
       </div>
-      <Card style={{ width: '25rem' }}>
-        <Card.Body>
-          <Card.Title className="text-dark text-center">Local Distro</Card.Title>
-          <Card.Text>The Local Distro is your new, go-to spot for groceries, a quick bite after work, a drink with friends, a play date for your pup, and that perfect, local-made housewarming gift. Swing by our take-out window while walking your dog, make new friends over a friendly game of cornhole, and bring the family out for a weekend bar-b-que brunch! We can’t wait to bring our community together and do great things!</Card.Text>
-          <Card.Link href="https://www.thelocaldistro.com/" target="blank">Website</Card.Link>
-          <Card.Link href="https://g.page/The-Distro?share" target="blank">Map</Card.Link>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '25rem' }}>
-        <Card.Body>
-          <Card.Title className="text-dark text-center">Riddim N Spice</Card.Title>
-          <Card.Text>Brothers Chef Kamal Kalokoh and Rashean Conaway want everyone to experience the food and culture of the islands. From juicy jerk chicken and cucumber-mango slaw (featured in the Nourish Nashville cookbook), to a variety of rice like Jamaican rice and peas and Haitian djon djon, our food transports you. Come in and taste for yourself. </Card.Text>
-          <Card.Link href="https://www.riddimnspice.com/" target="blank">Website</Card.Link>
-          <Card.Link href="https://www.google.com/maps/place/Riddim+n+Spice/@36.1678891,-86.8128521,17z/data=!3m1!4b1!4m5!3m4!1s0x8864673d6611131b:0xa952da8d33c58168!8m2!3d36.1678891!4d-86.8106581" target="blank">Map</Card.Link>
-        </Card.Body>
-      </Card>
+      <Container>
+        <Row className="restaurant">
+          <Col>
+            <Card className="heatCard">
+              <Card.Body>
+                <Card.Title className="text-dark text-center">Local Distro</Card.Title>
+                <Card.Text>The Local Distro is your new, go-to spot for groceries, a quick bite after work, a drink with friends, a play date for your pup, and that perfect, local-made housewarming gift. Swing by our take-out window while walking your dog, make new friends over a friendly game of cornhole, and bring the family out for a weekend bar-b-que brunch! We can’t wait to bring our community together and do great things!</Card.Text>
+                <Card.Link href="https://www.thelocaldistro.com/" target="blank">Website</Card.Link>
+                <Card.Link href="https://g.page/The-Distro?share" target="blank">Map</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card className="heatCard">
+              <Card.Body>
+                <Card.Title className="text-dark text-center">Riddim N Spice</Card.Title>
+                <Card.Text>Brothers Chef Kamal Kalokoh and Rashean Conaway want everyone to experience the food and culture of the islands. From juicy jerk chicken and cucumber-mango slaw (featured in the Nourish Nashville cookbook), to a variety of rice like Jamaican rice and peas and Haitian djon djon, our food transports you. Come in and taste for yourself. </Card.Text>
+                <Card.Link href="https://www.riddimnspice.com/" target="blank">Website</Card.Link>
+                <Card.Link href="https://www.google.com/maps/place/Riddim+n+Spice/@36.1678891,-86.8128521,17z/data=!3m1!4b1!4m5!3m4!1s0x8864673d6611131b:0xa952da8d33c58168!8m2!3d36.1678891!4d-86.8106581" target="blank">Map</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </div>
   </Fragment>
 )
