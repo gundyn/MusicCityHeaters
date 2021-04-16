@@ -29,7 +29,7 @@ const Heat = () => (
             <Col>
               <Card className="heatCard">
                 <Card.Body className="card-body">
-                  <Card.Title className="text-dark text-center">Local Distro</Card.Title>
+                  <Card.Title className="Title text-center">Local Distro</Card.Title>
                   <Card.Text className="heat-text">The Local Distro is your new, go-to spot for groceries, a quick bite after work, a drink with friends, a play date for your pup, and that perfect, local-made housewarming gift. Swing by our take-out window while walking your dog, make new friends over a friendly game of cornhole, and bring the family out for a weekend bar-b-que brunch! We can’t wait to bring our community together and do great things!</Card.Text>
                   <Card.Footer className="heatCardFooter">
                     <Card.Link href="https://www.thelocaldistro.com/" target="blank">Website</Card.Link>
@@ -41,7 +41,7 @@ const Heat = () => (
             <Col>
               <Card className="heatCard">
                 <Card.Body className="card-body">
-                  <Card.Title className="text-dark text-center">Riddim N Spice</Card.Title>
+                  <Card.Title className="Title text-center">Riddim N Spice</Card.Title>
                   <Card.Text className="heat-text">Brothers Chef Kamal Kalokoh and Rashean Conaway want everyone to experience the food and culture of the islands. From juicy jerk chicken and cucumber-mango slaw (featured in the Nourish Nashville cookbook), to a variety of rice like Jamaican rice and peas and Haitian djon djon, our food transports you. Come in and taste for yourself.</Card.Text>
                   <Card.Footer className="heatCardFooter">
                     <Card.Link href="https://www.riddimnspice.com/" target="blank">Website</Card.Link>

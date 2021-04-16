@@ -1,9 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 
+@font-face {
+  font-family: "Brown";
+  src: url("/Fonts/Brown-Font/BrownMedium Regular.ttf" format("ttf"));
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
     color: white;
+    
   }
   
   .navbar {
@@ -17,8 +23,9 @@ body {
 }
 
 h1, h2, h5, p {
-  color: #999D9D;
+  color: #1D325E;
   text-align: center;
+  font-family: "Brown";
 }
 
 .navbar {
@@ -68,4 +75,27 @@ footer {
   bottom: 0;
   left:0;
   width: 100%;
+}
+
+a {
+  color: #1D325E;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px #E7E239;
+  cursor: pointer;
+}
+
+a:visited:hover {
+  color: {background-color: #059694}
+;
+}
+
+.Title {
+  color: #1D325E;
+  font-family: "Brown";
+  font-weight: bold;
 }
