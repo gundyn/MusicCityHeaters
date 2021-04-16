@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Card, Container, Row, Col } from 'react-bootstrap'
+import Footer from '../Footer/Footer.js'
 import '../../index.scss'
 
 import heat from './heat.png'
@@ -41,7 +42,7 @@ const Heat = () => (
             <Col>
               <Card className="heatCard">
                 <Card.Body className="card-body">
-                  <Card.Title className="Title text-center">Riddim N Spice</Card.Title>
+                  <Card.Title className="title text-center">Riddim N Spice</Card.Title>
                   <Card.Text className="heat-text">Brothers Chef Kamal Kalokoh and Rashean Conaway want everyone to experience the food and culture of the islands. From juicy jerk chicken and cucumber-mango slaw (featured in the Nourish Nashville cookbook), to a variety of rice like Jamaican rice and peas and Haitian djon djon, our food transports you. Come in and taste for yourself.</Card.Text>
                   <Card.Footer className="heatCardFooter">
                     <Card.Link href="https://www.riddimnspice.com/" target="blank">Website</Card.Link>
@@ -54,6 +55,7 @@ const Heat = () => (
         </Container>
       </div>
     </div>
+    <Footer />
   </Fragment>
 )
 
