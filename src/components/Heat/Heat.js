@@ -30,7 +30,7 @@ const Heat = () => (
             <Col>
               <Card className="heatCard">
                 <Card.Body className="card-body">
-                  <Card.Title className="Title text-center">Local Distro</Card.Title>
+                  <Card.Title className="title text-center">Local Distro</Card.Title>
                   <Card.Text className="heat-text">The Local Distro is your new, go-to spot for groceries, a quick bite after work, a drink with friends, a play date for your pup, and that perfect, local-made housewarming gift. Swing by our take-out window while walking your dog, make new friends over a friendly game of cornhole, and bring the family out for a weekend bar-b-que brunch! We can’t wait to bring our community together and do great things!</Card.Text>
                   <Card.Footer className="heatCardFooter">
                     <Card.Link href="https://www.thelocaldistro.com/" target="blank">Website</Card.Link>
