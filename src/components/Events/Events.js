@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import Iframe from 'react-iframe'
+import Footer from '../Footer/Footer.js'
+import '../../index.scss'
 
 const Events = () => (
   <Fragment>
@@ -10,6 +12,7 @@ const Events = () => (
       display="initial"
       position="relative"
     />
+    <Footer />
   </Fragment>
 )
 
