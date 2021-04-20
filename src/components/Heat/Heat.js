@@ -16,12 +16,27 @@ const Heat = () => (
         </div>
         <br/>
         <p>Mission: to be a positive social influence and service the equity of the Nashville Community through the Music City Heaters</p>
-        <br/>
+        <hr />
         <div className="row justify-content-center text-center">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOkCKEcEtM278_ZFe9qCZGAfQER2VxLe3fiSC2MCtpvrmolg/viewform?usp=pp_url" target="_blank" rel="noopener noreferrer">
-            HEAT Restaurant Visit Form
-          </a>
+          <h3>Media</h3>
+          <Container>
+            <Row>
+              <Col>
+                <a href="https://pharmaceuticalsoccer.libsyn.com/cba-talk-is-over-for-now" target="_blank" rel="noopener noreferrer">
+                  <u>Pharmaceutical Soccer</u>
+                </a>
+                <p>Tim Sullivan the leader in independent coverage of Nashville Soccer Club.</p>
+              </Col>
+              <Col>
+                <a href="https://clubcountryusa.com/2021/02/08/h-e-a-t-initiative-set-to-support-minority-owned-businesses/" target="_blank" rel="noopener noreferrer">
+                  <u>Club & Country</u>
+                </a>
+                <p>A Nashville Soccer podcast that is hosted by fans, for the fans</p>
+              </Col>
+            </Row>
+          </Container>
         </div>
+        <hr />
         <br />
       </div>
       <div>
