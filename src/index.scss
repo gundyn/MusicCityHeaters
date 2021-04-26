@@ -123,11 +123,34 @@ a:visited:hover {
 
 // EVENTS
 iframe {
-  border: .5em solid #1D325E;
+  box-shadow: .25em .25em 0 black;
+  border: .25em solid white;
+  border-radius: .5rem;
   font-family: "Brown";
   width: 100%;
   height: 500px;
   display: initial;
   position: relative;
+}
+
+.weather {
+  background: rgba(0,51,102, .5);
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 1.5em 2em .5em;
+  text-align: center;
+  box-shadow: .25em .25em 0 black;
+  border: .25em solid white;
+  border-radius: .5rem;
+}
+
+.weatherHeader {
+  color: #E7E239;
+  font-family: Pacifico;
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0;
+  text-shadow: .15rem .15rem 0 rgba(#000000, .75);
 }
 
