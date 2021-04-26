@@ -5,6 +5,10 @@
   src: url("/Fonts/Brown-Font/BrownMedium Regular.ttf" format("ttf"));
 }
 
+.font-link {
+  font-family: Pacifico;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
