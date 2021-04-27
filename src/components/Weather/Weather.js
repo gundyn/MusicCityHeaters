@@ -21,9 +21,10 @@ function WeatherFetch () {
   return (
     <div className="weather">
       <h1 className="weatherHeader">Your Weather</h1>
-      <h1>{mainTemp} °C</h1>
-      <h1>{main}</h1>
-      <h1>Wind : {description}</h1>
+      <br />
+      <p className="weatherText">{mainTemp} °C</p>
+      <p className="weatherText">{main}</p>
+      <p className="weatherText">Wind : {description}</p>
     </div>
   )
 }

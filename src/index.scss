@@ -140,21 +140,30 @@ iframe {
 .weather {
   background: rgba(0,51,102, .5);
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 75%;
+  height: 500px;
   padding: 1.5em 2em .5em;
   text-align: center;
   box-shadow: .25em .25em 0 black;
   border: .25em solid white;
   border-radius: .5rem;
+  margin-right: 0px;
 }
 
 .weatherHeader {
   color: #E7E239;
   font-family: Pacifico;
-  font-size: 4em;
+  font-size: 4vw;
   font-weight: normal;
   line-height: 1em;
   margin: 0;
   text-shadow: .15rem .15rem 0 rgba(#000000, .75);
 }
 
+.weatherText {
+  font-size: 2vw;
+  font-family: "Brown";
+}
+.eventContainer {
+  max-width: '100%'  //This will make container to take screen width
+}
