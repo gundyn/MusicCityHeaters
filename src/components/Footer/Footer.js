@@ -9,8 +9,8 @@ const Footer = () => (
   <Fragment>
     <footer className="footer">
       <Container fluid className="footer_container">
-        <Row className="my-auto">
-          <Col>
+        <Row className="justify-content-md-center">
+          <Col md={{ span: 3, offset: 3 }}>
             <a className="footer_links" href="https://twitter.com/HeatersNSC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">
               <img src={twitter} />
             </a>
