@@ -13,6 +13,7 @@ import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Heat from './components/Heat/Heat'
 import Events from './components/Events/Events'
+// import ProductList from './components/Merch/Products'
 // import Board from './components/Board/Board'
 // import Cart from './components/Merch/Cart'
 
@@ -71,6 +72,7 @@ class App extends Component {
   }
 }
 
+// <Route exact path='/merch' render={() => (<ProductList />)} />
 // <Route exact path='/merch' render={() => (<Cart />)} />
 
 // <Route path='/sign-up' render={() => (
