@@ -1,6 +1,6 @@
 import React from 'react'
-// import ProductItem from './ProductItem'
-// import withContext from '../withContext'
+import ProductItem from './ProductItem'
+import withContext from '../../withContext'
 
 const ProductList = props => {
   const { products } = props.context

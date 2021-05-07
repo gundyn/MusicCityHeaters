@@ -16,6 +16,7 @@ import Events from './components/Events/Events'
 // import ProductList from './components/Merch/Products'
 // import Board from './components/Board/Board'
 // import Cart from './components/Merch/Cart'
+import Merchendise from './components/Merch/Merchendise'
 
 class App extends Component {
   constructor (props) {
@@ -65,6 +66,8 @@ class App extends Component {
           <Route exact path='/heat-initiative' render={() => (<Heat />)} />
 
           <Route exact path='/events' render={() => (<Events />)} />
+
+          <Route exact path='/merch' render={() => (<Merchendise />)} />
 
         </main>
       </Fragment>
