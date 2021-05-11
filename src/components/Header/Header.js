@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+// import NavDropdown from 'react-bootstrap/NavDropdown'
 import logo from './heater_logo.png'
 // import hamburger from './hamburger_icon.png'
 
@@ -14,19 +14,22 @@ import logo from './heater_logo.png'
 
 const unauthenticatedOptions = (
   <Fragment>
-    <NavDropdown title="Menu" class="collapsible-nav-dropdown">
-      <NavDropdown.Item href="#heat-initiative">H-E-A-T</NavDropdown.Item>
-      <NavDropdown.Item href="#events">Events</NavDropdown.Item>
 
-    </NavDropdown>
   </Fragment>
 )
 
+// <NavDropdown title="Menu" class="collapsible-nav-dropdown">
+//   <NavDropdown.Item href="#heat-initiative">H-E-A-T</NavDropdown.Item>
+//   <NavDropdown.Item href="#events">Events</NavDropdown.Item>
+//
+// </NavDropdown>
 // <NavDropdown.Item href="#merch">Merch</NavDropdown.Item>
 
 const alwaysOptions = (
   <Fragment>
     <Nav.Link href="#/">Home</Nav.Link>
+    <Nav.Link href="#/heat-initiative">H-E-A-T</Nav.Link>
+    <Nav.Link href="#/events">Events</Nav.Link>
   </Fragment>
 )
 
