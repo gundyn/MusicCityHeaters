@@ -11,12 +11,12 @@ import Header from './components/Header/Header'
 // import ChangePassword from './components/ChangePassword/ChangePassword'
 
 import Home from './components/Home/Home'
-import Heat from './components/Heat/Heat'
-import Events from './components/Events/Events'
+// import Heat from './components/Heat/Heat'
+// import Events from './components/Events/Events'
 // import ProductList from './components/Merch/Products'
 // import Board from './components/Board/Board'
 // import Cart from './components/Merch/Cart'
-import Merchandise from './components/Merch/Merchandise'
+// import Merchandise from './components/Merch/Merchandise'
 
 class App extends Component {
   constructor (props) {
@@ -62,18 +62,17 @@ class App extends Component {
         ))}
         <main className="container">
           <Route exact path='/' component={Home}/>
-
-          <Route exact path='/heat-initiative' render={() => (<Heat />)} />
-
-          <Route exact path='/events' render={() => (<Events />)} />
-
-          <Route exact path='/merch' render={() => (<Merchandise />)} />
-
         </main>
       </Fragment>
     )
   }
 }
+
+// <Route exact path='/heat-initiative' render={() => (<Heat />)} />
+//
+// <Route exact path='/events' render={() => (<Events />)} />
+//
+// <Route exact path='/merch' render={() => (<Merchandise />)} />
 
 // <Route exact path='/merch' render={() => (<ProductList />)} />
 // <Route exact path='/merch' render={() => (<Cart />)} />

@@ -9,7 +9,7 @@ const Heat = () => (
   <Fragment>
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h1>H.E.A.T. initiative</h1>
+        <h1 id="heat">H.E.A.T. initiative</h1>
         <br/>
         <div className="row justify-content-center text-center">
           <img src={heat} className="heat"/>
