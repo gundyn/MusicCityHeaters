@@ -11,7 +11,7 @@ import Header from './components/Header/Header'
 // import ChangePassword from './components/ChangePassword/ChangePassword'
 
 import Home from './components/Home/Home'
-// import Heat from './components/Heat/Heat'
+import Heat from './components/Heat/Heat'
 // import Events from './components/Events/Events'
 // import ProductList from './components/Merch/Products'
 // import Board from './components/Board/Board'
@@ -62,6 +62,8 @@ class App extends Component {
         ))}
         <main className="container">
           <Route exact path='/' component={Home}/>
+
+          <Route exact path='/heat' component={Heat} />
         </main>
       </Fragment>
     )
