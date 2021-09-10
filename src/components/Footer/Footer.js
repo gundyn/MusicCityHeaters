@@ -1,34 +1,29 @@
-import React, { Fragment } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import twitter from './twitter_logo.png'
-import instagram from './instagram_logo.png'
-import newsletter from './newsletter_logo.png'
+import React from 'react'
 import '../../index.scss'
 
-const Footer = () => (
-  <Fragment>
-    <footer className="footer">
-      <Container fluid className="footer_container">
-        <Row className="justify-content-md-center">
-          <Col md={{ span: 3, offset: 3 }}>
-            <a className="footer_links" href="https://twitter.com/HeatersNSC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">
-              <img src={twitter} />
-            </a>
-          </Col>
-          <Col>
-            <a className="footer_links" href="https://www.instagram.com/heatersnsc/?hl=en" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} />
-            </a>
-          </Col>
-          <Col>
-            <a className="footer_links" href="https://mailchi.mp/1fb2fa80567d/musiccityheaters" target="_blank" rel="noopener noreferrer">
-              <img src={newsletter} />
-            </a>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  </Fragment>
-)
+import { FaInstagram, FaTwitter, FaMailchimp } from 'react-icons/fa'
+
+function Footer () {
+  return (
+    <div className="main-footer">
+      <div className="container">
+        <div className="row d-flex justify-content-center align-items-center" id="footer">
+          <span className="anchor" id="connect"></span>
+          <div className="col-lg-6 align-items-center">
+            <div>
+              <p className="footer">&copy; {(new Date().getFullYear())} | Music City Heaters</p>
+            </div>
+          </div>
+          <div className="col-lg-6 social-icons align-items-center">
+            <a className="insta-icon" href="https://www.instagram.com/heatersnsc/?hl=en" aria-label="Instagram profile for the Music City Heaters supporters group" target="_self"><FaInstagram/></a>
+            <a className="twit-icon" href="https://twitter.com/HeatersNSC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter profile for the Music City Heaters supporters group" target="_self"><FaTwitter/></a>
+            <a className="chimp-icon" href="https://mailchi.mp/1fb2fa80567d/musiccityheaters" aria-label="MailChimp newsletter sign-up" target="_self"><FaMailchimp/></a>
+            <p className="self-promo">Site By: &nbsp;<a href="https://www.nathangundy.com/" aria-label="Nathan Gundy protfolio website" target="_self">Nathan Gundy</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default Footer

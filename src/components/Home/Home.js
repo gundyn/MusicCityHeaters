@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
-import Footer from '../Footer/Footer.js'
+import React from 'react'
+
 import Heat from '../Heat/Heat'
 import '../../index.scss'
 
 // import header from './header.jpeg'
 
 const Home = () => (
-  <Fragment>
+  <div className="container">
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
         <h1>Music City Heaters</h1>
@@ -15,9 +15,10 @@ const Home = () => (
       </div>
     </div>
     <img className="homeHeader" />
-    <Heat />
-    <Footer />
-  </Fragment>
+    <section>
+      <Heat />
+    </section>
+  </div>
 )
 
 export default Home

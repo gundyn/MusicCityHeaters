@@ -1,17 +1,17 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
 
 // import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer.js'
 // import SignUp from './components/SignUp/SignUp'
 // import SignIn from './components/SignIn/SignIn'
 // import SignOut from './components/SignOut/SignOut'
 // import ChangePassword from './components/ChangePassword/ChangePassword'
 
 import Home from './components/Home/Home'
-import Heat from './components/Heat/Heat'
 // import Events from './components/Events/Events'
 // import ProductList from './components/Merch/Products'
 // import Board from './components/Board/Board'
@@ -48,24 +48,25 @@ class App extends Component {
     const { msgAlerts, user } = this.state
 
     return (
-      <Fragment>
-        <Header user={user} />
-        {msgAlerts.map(msgAlert => (
-          <AutoDismissAlert
-            key={msgAlert.id}
-            heading={msgAlert.heading}
-            variant={msgAlert.variant}
-            message={msgAlert.message}
-            id={msgAlert.id}
-            deleteAlert={this.deleteAlert}
-          />
-        ))}
-        <main className="container">
-          <Route exact path='/' component={Home}/>
-
-          <Route exact path='/heat' component={Heat} />
-        </main>
-      </Fragment>
+      <div className="page-container">
+        <div className="content-wrap">
+          <Header user={user} />
+          {msgAlerts.map(msgAlert => (
+            <AutoDismissAlert
+              key={msgAlert.id}
+              heading={msgAlert.heading}
+              variant={msgAlert.variant}
+              message={msgAlert.message}
+              id={msgAlert.id}
+              deleteAlert={this.deleteAlert}
+            />
+          ))}
+          <main className="container main-container">
+            <Route exact path='/' component={Home}/>
+          </main>
+        </div>
+        <Footer />
+      </div>
     )
   }
 }

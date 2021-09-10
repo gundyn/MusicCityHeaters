@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import { Card, Container, Row, Col } from 'react-bootstrap'
-import Footer from '../Footer/Footer.js'
 import '../../index.scss'
 
 import heat from './heat.png'
@@ -70,7 +69,6 @@ const Heat = () => (
         </Container>
       </div>
     </div>
-    <Footer />
   </Fragment>
 )
 
