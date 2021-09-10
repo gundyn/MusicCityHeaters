@@ -26,10 +26,11 @@ const unauthenticatedOptions = (
 // <NavDropdown.Item href="#merch">Merch</NavDropdown.Item>
 
 // <Nav.Link href="#heat">H-E-A-T</Nav.Link>
+// <Nav.Link to="/heat">H-E-A-T</Nav.Link>
 
 const alwaysOptions = (
   <Fragment>
-    <Nav.Link to="/heat">H-E-A-T</Nav.Link>
+
   </Fragment>
 )
 
