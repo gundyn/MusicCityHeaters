@@ -182,9 +182,21 @@ p {
 }
 
 /* Join */
-.join a {
-  color: #1f325a !important; 
+.btn {
+  background-color: #1f325a;
+  padding: 10px 20px;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
 }
+
+.btn:hover {
+  background: #f6d04e;
+  color: #1f325a !important;
+}
+
 
 /* Footer */
 .main-footer {
